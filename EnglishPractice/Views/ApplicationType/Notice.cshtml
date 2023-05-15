@@ -1,0 +1,112 @@
+﻿@model EnglishPractice.Models.ApplicationType
+
+<form method="post">
+    <input asp-for="Id" hidden />
+    <div class="border p-3">
+        <div class="form-group row">
+            <h2 class="text-info pl-3 text-danger">Notice Student</h2>
+
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Name"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <table class="table"> 
+                        <thead>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                                <th>21</th>
+                                <th>22</th>
+                                <th>23</th>
+                                <th>24</th>
+                                <th>25</th>
+                                <th>26</th>
+                                <th>27</th>
+                                <th>28</th>
+                                <th>29</th>
+                                <th>30</th>
+                                <th>31</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name2" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name3" style="width: 20px; height: 20px;"> </td>
+                                <td><input type="checkbox" name="name1" style="width: 20px; height: 20px;"> </td>
+                             </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="form-group row">
+                    <div class="col-8 offset-4 row">
+
+                        <div class="col">
+                           <input type="submit" class="btn btn-info w-100" value="Update"/> 
+                        </div>
+                        <div class="col">
+                           <a asp-action="Index" class="btn btn-primary w-100">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                @* Keep this empty *@
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{ <partial name="_ValidationScriptsPartial"/>}
+}
